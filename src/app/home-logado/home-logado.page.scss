@@ -1,0 +1,32 @@
+.toolbar{
+    --background:#048D6C;
+}
+
+h4{
+    display: inline;
+    color: #FFA69E;
+}
+.busca{
+    width: 80vw;
+    border: solid #048D6C;
+    border-radius:25px;
+    --background: white;
+    text-align: center;
+}
+
+
+.divbusca{
+    width: 80vw;
+}
+
+.icon{
+    color: #FFA69E;
+}
+
+p{
+    color: #048D6C;
+}
+.colbusca{
+    display: flex;
+    justify-content: center;
+}

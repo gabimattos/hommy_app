@@ -3,6 +3,10 @@
 
 /** Ionic CSS Variables **/
 :root {
+
+  --ion-font-family: 'Montserrat', sans-serif;
+    
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -230,3 +234,4 @@
     --ion-card-background: #1e1e1e;
   }
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet');
