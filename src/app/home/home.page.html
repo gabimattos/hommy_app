@@ -54,100 +54,97 @@
     </ion-row>
   </ion-grid>
 
+  <ion-card *ngFor="let republica of republicas">
 
-  
+    <ion-card-header class="cardRepublic">
+      <img src="/assets/casa1.jpg" alt="">
 
-    <ion-slides  [options]="slideOpts">
-      <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-card-subtitle>{{republica.nome}}</ion-card-subtitle>
+          </ion-col>
 
-        <ion-card>
-          <ion-card-header class="cardRepublic">
-            <img src="/assets/casa1.jpg" alt="">
+          <ion-col>
+            <div class="ion-text-end">
+              <ion-icon class="icon" name="star"></ion-icon>
+              <ion-icon class="icon" name="star"></ion-icon>
+              <ion-icon class="icon" name="star"></ion-icon>
+              <ion-icon class="icon" name="star"></ion-icon>
+              <ion-icon class="icon" name="star"></ion-icon>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
 
-            <ion-grid>
-              <ion-row>
-                <ion-col>
-                  <ion-card-subtitle>Micael's Residence</ion-card-subtitle>
-                </ion-col>
-
-                <ion-col>
-                  <div class="ion-text-end">
-                    <ion-icon class="icon" name="star"></ion-icon>
-                    <ion-icon class="icon" name="star"></ion-icon>
-                    <ion-icon class="icon" name="star"></ion-icon>
-                    <ion-icon class="icon" name="star"></ion-icon>
-                    <ion-icon class="icon" name="star"></ion-icon>
-                  </div>
-                </ion-col>
-              </ion-row>
-            </ion-grid>
-          </ion-card-header>
-
+    <ion-card-content class="inforepublica">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div class="ion-text-start">
+              Cidade
+            </div>
+                  
+          </ion-col>
+      
           
-        
-        </ion-card>
+          <ion-col>
+            <div class="ion-text-end">
+              <h5>{{republica.cidade}}</h5>
+            </div>  
+          </ion-col>
+        </ion-row>
+      
+        <ion-row>
+          <ion-col>
+            <div class="ion-text-start">
+              Preço
+            </div>
+                  
+          </ion-col>
+      
+          <ion-col>
+            <div class="ion-text-end">
+              <h5>{{republica.preco}}</h5>
+            </div>        
+          </ion-col>
+        </ion-row>
 
-      </ion-slide>
+        <ion-row>
+          <ion-col>
+            <div class="ion-text-start">
+              Nº de Quartos
+            </div>                 
+          </ion-col>
+      
+          <ion-col>
+            <div class="ion-text-end">
+              <h5>{{republica.quartos}}</h5>
+            </div>        
+          </ion-col>
+        </ion-row>
 
-      <ion-slide>
+        <ion-row>
+          <ion-col>
+            <div class="ion-text-start">
+              Nº de Banheiros
+            </div>
+                  
+          </ion-col>
+      
+          <ion-col>
+            <div class="ion-text-end">
+              <h5>{{republica.banheiros}}</h5>
+            </div>        
+          </ion-col>
+        </ion-row>
 
-        <ion-card>
-        <ion-card-header class="cardRepublic">
-          <img src="/assets/casa2.jpg" alt="">
 
-          <ion-grid>
-            <ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>          
 
-              <ion-col>
-                <ion-card-subtitle>República da Gabi</ion-card-subtitle>
-              </ion-col>
-
-              <ion-col>
-                <div class="ion-text-end">
-                  <ion-icon class="icon" name="star"></ion-icon>
-                  <ion-icon class="icon" name="star"></ion-icon>
-                  <ion-icon class="icon" name="star"></ion-icon>
-                  <ion-icon class="icon" name="star-outline"></ion-icon>
-                  <ion-icon class="icon" name="star-outline"></ion-icon>
-                </div>
-              </ion-col>
-
-            </ion-row>
-          </ion-grid>
-        </ion-card-header>
-      </ion-card>
-
-      </ion-slide>
-
-      <ion-slide>
-        <ion-card>
-         <ion-card-header class="cardRepublic">
-            <img src="/assets/casa3.jpg" alt="">
-
-            <ion-grid>
-              <ion-row>
-                <ion-col>
-                  <ion-card-subtitle>República do Pedro</ion-card-subtitle>
-                </ion-col>
-
-                <ion-col>
-                  <div class="ion-text-end">
-                    <ion-icon class="icon" name="star"></ion-icon>
-                    <ion-icon class="icon" name="star"></ion-icon>
-                    <ion-icon class="icon" name="star-outline"></ion-icon>
-                    <ion-icon class="icon" name="star-outline"></ion-icon>
-                    <ion-icon class="icon" name="star-outline"></ion-icon>
-                  </div>
-                </ion-col>
-              </ion-row>
-            </ion-grid>
-            
-           
-          </ion-card-header>
-        </ion-card>
-      </ion-slide>
-
-    </ion-slides>
-  </ion-content>
+</ion-content>
 
 
