@@ -4,9 +4,7 @@ class Republica{
 
   nome: string;
   cidade: string;
-  preco: string;
-  quartos: number;
-  banheiros: number;
+  avaliacao: number;
 }
 
 @Component({
@@ -23,27 +21,10 @@ export class HomePage implements OnInit {
   ngOnInit() {
     this.republicas = [{
         
-        nome: 'Republica da Hannah',
+        nome: 'Republica da dona Jô',
         cidade: 'Rio de Janeiro',
-        preco: 'R$230',
-        quartos: 3,
-        banheiros: 1,
-    },
-    {
-        
-        nome: 'Republica do Ulrich',
-        cidade: 'São Paulo',
-        preco: 'R$300',
-        quartos: 4,
-        banheiros: 2,
-    },
-    {
-       
-        nome: 'Republica do Mikkel',
-        cidade: 'Guarujá',
-        preco: 'R$800',
-        quartos: 8,
-        banheiros: 4,
+        avaliacao: 4.5,
+    
     }]
   }
 

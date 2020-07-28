@@ -22,6 +22,18 @@ const routes: Routes = [
   {
     path: 'home-logado',
     loadChildren: () => import('./home-logado/home-logado.module').then( m => m.HomeLogadoPageModule)
+  },
+  {
+    path: 'cadastro-republica',
+    loadChildren: () => import('./cadastro-republica/cadastro-republica.module').then( m => m.CadastroRepublicaPageModule)
+  },
+  {
+    path: 'cadastro-usuario',
+    loadChildren: () => import('./cadastro-usuario/cadastro-usuario.module').then( m => m.CadastroUsuarioPageModule)
+  },
+  {
+    path: 'republica',
+    loadChildren: () => import('./republica/republica.module').then( m => m.RepublicaPageModule)
   }
 ];
 

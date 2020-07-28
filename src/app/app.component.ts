@@ -27,6 +27,21 @@ export class AppComponent implements OnInit {
       url: '/favoritas',
       icon: 'star'
     },
+    {
+      title: 'Cadastro Usuário',
+      url: '/cadastro-usuario',
+      icon: 'person-add'
+    },
+    {
+      title: 'Cadastro República',
+      url: '/cadastro-republica',
+      icon: 'add'
+    },
+    {
+      title: 'República',
+      url: '/republica',
+      icon: 'home'
+    },
 
   ];
  

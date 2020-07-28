@@ -65,25 +65,23 @@
             <ion-card-subtitle>{{republica.nome}}</ion-card-subtitle>
           </ion-col>
 
-          <ion-col>
-            <div class="ion-text-end">
-              <ion-icon class="icon" name="star"></ion-icon>
-              <ion-icon class="icon" name="star"></ion-icon>
-              <ion-icon class="icon" name="star"></ion-icon>
-              <ion-icon class="icon" name="star"></ion-icon>
-              <ion-icon class="icon" name="star"></ion-icon>
+          <ion-col size="3" >
+            <div>
+              <ion-chip color="white" class="borderchip">
+                <ion-icon class="colorverde" name="star"></ion-icon>
+                <ion-label class="colorverde">
+                  <h4>{{republica.avaliacao}}</h4>       
+                </ion-label>
+              </ion-chip>
             </div>
+            
           </ion-col>
         </ion-row>
-      </ion-grid>
-    </ion-card-header>
 
-    <ion-card-content class="inforepublica">
-      <ion-grid>
-        <ion-row>
+        <ion-row class="colorverde">
           <ion-col>
             <div class="ion-text-start">
-              Cidade
+              <h5>Cidade</h5>
             </div>
                   
           </ion-col>
@@ -95,54 +93,11 @@
             </div>  
           </ion-col>
         </ion-row>
-      
-        <ion-row>
-          <ion-col>
-            <div class="ion-text-start">
-              Preço
-            </div>
-                  
-          </ion-col>
-      
-          <ion-col>
-            <div class="ion-text-end">
-              <h5>{{republica.preco}}</h5>
-            </div>        
-          </ion-col>
-        </ion-row>
-
-        <ion-row>
-          <ion-col>
-            <div class="ion-text-start">
-              Nº de Quartos
-            </div>                 
-          </ion-col>
-      
-          <ion-col>
-            <div class="ion-text-end">
-              <h5>{{republica.quartos}}</h5>
-            </div>        
-          </ion-col>
-        </ion-row>
-
-        <ion-row>
-          <ion-col>
-            <div class="ion-text-start">
-              Nº de Banheiros
-            </div>
-                  
-          </ion-col>
-      
-          <ion-col>
-            <div class="ion-text-end">
-              <h5>{{republica.banheiros}}</h5>
-            </div>        
-          </ion-col>
-        </ion-row>
-
-
+        
       </ion-grid>
-    </ion-card-content>
+    </ion-card-header>
+
+  
   </ion-card>          
 
 </ion-content>
