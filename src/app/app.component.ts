@@ -33,6 +33,11 @@ export class AppComponent implements OnInit {
       icon: 'person-add'
     },
     {
+      title: 'Login',
+      url: '/login',
+      icon: 'person'
+    },
+    {
       title: 'Cadastro República',
       url: '/cadastro-republica',
       icon: 'add'

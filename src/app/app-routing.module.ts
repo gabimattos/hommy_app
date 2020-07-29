@@ -34,6 +34,10 @@ const routes: Routes = [
   {
     path: 'republica',
     loadChildren: () => import('./republica/republica.module').then( m => m.RepublicaPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   }
 ];
 

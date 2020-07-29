@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 import { ToastController } from '@ionic/angular';
+import { FormGroup, FormBuilder, Validators} from '@angular/forms';
 
 class Republica{
   id: number;
@@ -22,9 +23,23 @@ class Republica{
 })
 export class RepublicaPage implements OnInit {
 
+  registerForm: FormGroup;
+
+  submitForm(form){
+    console.log(form);
+    console.log(form.value);
+  }
+
   republicas: Republica[];
 
-  constructor(public alertController: AlertController, public toastController: ToastController) {}
+  constructor(public alertController: AlertController, public toastController: ToastController, public formbuilder: FormBuilder) {
+    this.registerForm = this.formbuilder.group({
+      comentario: [null, [Validators.maxLength(20), Validators.required]],
+      
+    });
+  }
+
+  
 
   async alerta(){
     const alert = await this.alertController.create({

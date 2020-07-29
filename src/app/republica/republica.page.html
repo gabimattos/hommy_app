@@ -137,4 +137,20 @@
     
   </ion-list>
 </div>
+
+<div class="ion-padding">
+  <form [formGroup]="registerForm" (ngSubmit)="submitForm(registerForm)">
+    <ion-list>
+      <ion-item>
+        <ion-input placeholder="Comente aqui" type="text" formControlName="comentario"></ion-input>
+      </ion-item>
+
+      <ion-row class="ion-justify-content-center">
+        <ion-button type="submit" color="success" [disabled]="registerForm.invalid" shape="round">Comentar</ion-button>
+      </ion-row>
+
+    </ion-list>
+
+  </form>
+</div>
 </ion-content>

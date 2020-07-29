@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" color="white">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img src="/assets/logoHommyS.png" alt="">
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <h2 class="colorbranca textocenter">Faça seu Login</h2>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="ion-padding">
+    <form [formGroup]="registerForm" (ngSubmit)="submitForm(registerForm)">
+      <ion-list >
+
+        <ion-item  class="ion-padding-top">
+          <ion-input  placeholder="Email*" type="email" formControlName="email"></ion-input>
+        </ion-item>
+
+        <ion-item class="ion-padding-top">
+          <ion-input placeholder="Senha*" type="password" formControlName="password"></ion-input>
+        </ion-item>
+
+        <ion-row class="ion-justify-content-center ">
+          <ion-button type="submit" shape="round" [disabled]="registerForm.invalid" color="success">Entrar</ion-button>
+        </ion-row>
+
+      </ion-list>
+
+    </form>
+  </div>
+
+
+</ion-content>

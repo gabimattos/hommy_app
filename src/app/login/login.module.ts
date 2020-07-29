@@ -5,19 +5,19 @@ import {BrMaskerModule } from 'br-mask';
 
 import { IonicModule } from '@ionic/angular';
 
-import { CadastroUsuarioPageRoutingModule } from './cadastro-usuario-routing.module';
+import { LoginPageRoutingModule } from './login-routing.module';
 
-import { CadastroUsuarioPage } from './cadastro-usuario.page';
+import { LoginPage } from './login.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CadastroUsuarioPageRoutingModule,
-    ReactiveFormsModule,
+    LoginPageRoutingModule,
     BrMaskerModule,
+    ReactiveFormsModule,
   ],
-  declarations: [CadastroUsuarioPage]
+  declarations: [LoginPage]
 })
-export class CadastroUsuarioPageModule {}
+export class LoginPageModule {}

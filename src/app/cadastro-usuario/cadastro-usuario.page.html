@@ -3,10 +3,73 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Cadastro Usuário</ion-title>
+    
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content >
 
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img src="/assets/logoHommyS.png" alt="">
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <h2 class="colorbranca textocenter">Faça seu cadastro</h2>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="ion-padding">
+    <form [formGroup]="registerForm" (ngSubmit)="submitForm(registerForm)">
+      <ion-list >
+        <ion-item  class="ion-padding-top ">
+          <ion-input placeholder="Nome*" type="text" formControlName="name"></ion-input>
+        </ion-item>
+
+        <ion-item  class="ion-padding-top">
+          
+          <ion-input  placeholder="Email*" type="email" formControlName="email"></ion-input>
+        </ion-item>
+
+        <ion-item class="ion-padding-top">
+         
+          <ion-input placeholder="Confirmação do Email*" type="email" formControlName="email"></ion-input>
+        </ion-item>
+
+        <ion-item class="ion-padding-top">
+          <ion-input placeholder="Telefone*" type="text"  formControlName="phone" [brmasker]="{phone:true}"></ion-input>
+        </ion-item>
+
+        <ion-item class="ion-padding-top">
+          
+          <ion-input placeholder="Senha*" type="password" formControlName="password"></ion-input>
+        </ion-item>
+
+        <ion-radio-group formControlName="status">
+          <ion-list-header></ion-list-header>
+          <ion-item>
+            <ion-label>Locador</ion-label>
+            <ion-radio slot="start" value="locador"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Locatário</ion-label>
+            <ion-radio slot="start" value="locatario"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+
+  
+
+        <ion-row class="ion-justify-content-center ">
+          <ion-button type="submit" shape="round" [disabled]="registerForm.invalid" color="success">Cadastrar</ion-button>
+        </ion-row>
+
+      </ion-list>
+
+    </form>
+  </div>
 </ion-content>
