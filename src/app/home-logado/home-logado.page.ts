@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 class Republica{
-
-  nome: string;
+  nomeR: string;
   cidade: string;
   avaliacao: number;
+  precoIndividual: number;
+  precoDuplo: number;
+  precoTriplo: number;
 }
 
 @Component({
@@ -18,28 +20,41 @@ export class HomeLogadoPage implements OnInit {
 
   constructor() { }
 
+  handleButtonEvent(event:any){
+    console.log(event);
+  }
+
   ngOnInit() {
 
     this.republicas = [{
         
-      nome: 'Republica da dona Jô',
+      nomeR: 'República da Manu',
       cidade: 'Rio de Janeiro',
-      avaliacao: 4.5,
+      avaliacao: 4.3,
+      precoIndividual: 300,
+      precoDuplo: 200,
+      precoTriplo: 100,
 
     },
     {
         
-      nome: 'Republica da dona Jô',
-      cidade: 'Rio de Janeiro',
+      nomeR: 'República da Gabi',
+      cidade: 'São Paulo',
       avaliacao: 4.5,
+      precoIndividual: 400,
+      precoDuplo: 350,
+      precoTriplo: 300,
     },
     {
         
-      nome: 'Republica da dona Jô',
-      cidade: 'Rio de Janeiro',
-      avaliacao: 4.5,
+      nomeR: 'República da Nay',
+      cidade: 'Recife',
+      avaliacao: 4.8,
+      precoIndividual: 500,
+      precoDuplo: 400,
+      precoTriplo: 370,
   
-  }]
+  }];
 
   }
 

@@ -1,0 +1,68 @@
+
+  <ion-card>
+
+    <ion-card-header class="cardRepublic">
+      <img src="/assets/casa1.jpg" alt="">
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-card-subtitle><h5>{{republica.nomeR}} </h5></ion-card-subtitle>
+          </ion-col>
+
+          <ion-col size="3" >
+            <div>
+              <ion-chip color="white" class="borderchip">
+                <ion-icon class="colorverde" name="star"></ion-icon>
+                <ion-label class="colorverde">
+                  <h4>{{republica.avaliacao}}</h4>       
+                </ion-label>
+              </ion-chip>
+            </div>
+            
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="colorverde">
+          <ion-col>
+            <div class="ion-text-start">
+              <p>Cidade</p>
+            </div>
+                  
+          </ion-col>
+      
+          
+          <ion-col>
+            <div class="ion-text-end ">
+              <p>{{republica.cidade}}</p>
+            </div>  
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="border">
+          <ion-col>
+            <div class="ion-text-start">
+              <p>Quarto Individual</p>
+              <p>Quarto Duplo</p>
+              <p>Quarto Triplo</p>
+            </div>
+                  
+          </ion-col>
+      
+          
+          <ion-col>
+            <div class="ion-text-end colorverde ">
+              <p>R${{republica.precoIndividual}}</p>
+              <p>R${{republica.precoDuplo}}</p>
+              <p>R${{republica.precoTriplo}}</p>
+            </div>  
+          </ion-col>
+        </ion-row>
+
+        
+      </ion-grid>
+    </ion-card-header>
+
+    <!--<ion-button (click)="emitEvent()">Oi</ion-button>
+    <ion-botton [disabled]="true">Tchau</ion-botton> -->
+  </ion-card>
