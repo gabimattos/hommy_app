@@ -54,51 +54,11 @@
     </ion-row>
   </ion-grid>
 
-  <ion-card *ngFor="let republica of republicas">
-
-    <ion-card-header class="cardRepublic">
-      <img src="/assets/casa1.jpg" alt="">
-
-      <ion-grid>
-        <ion-row>
-          <ion-col>
-            <ion-card-subtitle>{{republica.nome}}</ion-card-subtitle>
-          </ion-col>
-
-          <ion-col size="3" >
-            <div>
-              <ion-chip color="white" class="borderchip">
-                <ion-icon class="colorverde" name="star"></ion-icon>
-                <ion-label class="colorverde">
-                  <h4>{{republica.avaliacao}}</h4>       
-                </ion-label>
-              </ion-chip>
-            </div>
-            
-          </ion-col>
-        </ion-row>
-
-        <ion-row class="colorverde">
-          <ion-col>
-            <div class="ion-text-start">
-              <h5>Cidade</h5>
-            </div>
-                  
-          </ion-col>
-      
-          
-          <ion-col>
-            <div class="ion-text-end">
-              <h5>{{republica.cidade}}</h5>
-            </div>  
-          </ion-col>
-        </ion-row>
-        
-      </ion-grid>
-    </ion-card-header>
-
-  
-  </ion-card>          
+  <ion-slides  [options]="slideOpts">
+    <ion-slide *ngFor="let republica of republicas">
+      <app-card-home  [republica]="republica"  > </app-card-home>
+    </ion-slide>
+  </ion-slides>
 
 </ion-content>
 

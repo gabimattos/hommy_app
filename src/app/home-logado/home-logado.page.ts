@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 class Republica{
-  nomeR: string;
+  img:string;
+  nome: string;
   cidade: string;
   avaliacao: number;
   precoIndividual: number;
@@ -27,18 +28,19 @@ export class HomeLogadoPage implements OnInit {
   ngOnInit() {
 
     this.republicas = [{
-        
-      nomeR: 'República da Manu',
+      
+      img:'/assets/casa1.jpg',
+      nome: 'República da Manu',
       cidade: 'Rio de Janeiro',
-      avaliacao: 4.3,
-      precoIndividual: 300,
-      precoDuplo: 200,
-      precoTriplo: 100,
+      avaliacao: 4.8,
+      precoIndividual: 500,
+      precoDuplo: 400,
+      precoTriplo: 370,
 
     },
     {
-        
-      nomeR: 'República da Gabi',
+      img:'/assets/casa2.jpg',  
+      nome: 'República da Gabi',
       cidade: 'São Paulo',
       avaliacao: 4.5,
       precoIndividual: 400,
@@ -46,13 +48,13 @@ export class HomeLogadoPage implements OnInit {
       precoTriplo: 300,
     },
     {
-        
-      nomeR: 'República da Nay',
-      cidade: 'Recife',
-      avaliacao: 4.8,
-      precoIndividual: 500,
-      precoDuplo: 400,
-      precoTriplo: 370,
+      img:'/assets/casa3.jpg',  
+      nome: 'República da Nay',
+      cidade: 'Caxias',
+      avaliacao: 4.3,
+      precoIndividual: 300,
+      precoDuplo: 200,
+      precoTriplo: 100,
   
   }];
 
