@@ -64,15 +64,15 @@ export class RepublicaPage implements OnInit {
 
     this.republicas = [{
       id: 1 ,
-      nome:'Republica da dona Jô',
+      nome:'Republica da Manu',
       cidade: 'Rio de Janeiro',
       numero: 40,
       rua: 'Estrada da Agua Grande',
-      precoIndividual: 380,
-      precoDuplo: 290,
-      precoTriplo: 200,
+      precoIndividual: 300,
+      precoDuplo: 200,
+      precoTriplo: 100,
       observacao:'Não aceitados cachorros!',
-      avaliacao: 4.5,
+      avaliacao: 4.3,
     }]
   }
 
