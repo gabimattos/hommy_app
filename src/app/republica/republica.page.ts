@@ -68,11 +68,11 @@ export class RepublicaPage implements OnInit {
       cidade: 'Rio de Janeiro',
       numero: 40,
       rua: 'Estrada da Agua Grande',
-      precoIndividual: 300,
-      precoDuplo: 200,
-      precoTriplo: 100,
+      precoIndividual: 500,
+      precoDuplo: 400,
+      precoTriplo: 370,
       observacao:'Não aceitados cachorros!',
-      avaliacao: 4.3,
+      avaliacao: 4.8,
     }]
   }
 
