@@ -74,4 +74,13 @@
 
     </form>
   </div>
+
+  <ion-fab vertical ="center" horizontal="center" slot ="fixed">
+    <img [src]="photo" vertical="center" horizontal="center" class="addFoto"/>
+    <ion-fab-button (click)="takePicture()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+    <p>Adicionar Foto</p>
+  </ion-fab>
+
 </ion-content>
