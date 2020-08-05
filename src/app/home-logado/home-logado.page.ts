@@ -17,12 +17,17 @@ class Republica{
 })
 export class HomeLogadoPage implements OnInit {
 
+  gravarNome(){
+    localStorage.sitItem('nome', 'Gabriela Mattos')
+  }
+
   republicas: Republica[];
 
   constructor() { }
 
   handleButtonEvent(event:any){
-    console.log(event);
+    console.log('O evento foi recebido'); //prepara o pai para receber o evento do filho
+    alert(event);
   }
 
   ngOnInit() {

@@ -10,19 +10,17 @@ export class CardComponent implements OnInit {
   @Input() republica;
   
 
-  @Output() buttonPressed = new EventEmitter<string>();
+  @Output() buttonPressed = new EventEmitter<string>(); //ao clicar um evento será emitido
 
   constructor() { }
 
   ngOnInit() {}
 
-  handleButton():void {
-    this.buttonPressed.emit("Wooooooow");
-  }
+
 
   emitEvent(): void{
     console.log('Evento emitido')
-    this.buttonPressed.emit("Salva");
+    this.buttonPressed.emit("O botão foi clicado!!!!");
   }
 
 }
